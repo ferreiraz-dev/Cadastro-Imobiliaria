@@ -1,0 +1,255 @@
+/* Reset básico e fonte clean */
+* {
+  margin: 0;
+  padding: 3px;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Centralização horizontal e vertical */
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f4f8;
+}
+
+/* Container central reutilizável */
+.container {
+  width: 90%;
+  max-width: 800px;
+  background-color: #fff;
+  padding: 2rem;
+  padding-left: 100px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Layout principal */
+.dashboard {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Menu lateral */
+.sidebar {
+  width: 240px;
+  background: #111827;
+  color: #fff;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar h2 {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 600;
+  color: #60a5fa;
+}
+
+.sidebar nav a {
+  color: #d1d5db;
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  margin: 0.3rem 0;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.sidebar nav a:hover {
+  background-color: #1f2937;
+  color: #fff;
+}
+
+/* Conteúdo principal */
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.main-content h2 {
+  font-size: 2rem;
+  margin-bottom: auto;
+  text-align: center;
+}
+
+.main-content p {
+  font-size: 1.1rem;
+  color: #4b5563;
+  text-align: center;
+}
+
+.main-content a {
+  color: #4b5563;
+  text-decoration: none;
+  padding: 10px;
+  margin: auto;
+  border-radius: 10px;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-content a:hover {
+  background-color: #1f2937;
+  color: #fff;
+}
+
+/* Container da Tabela */
+.tabela-container {
+  background: #fff;
+  padding: 5px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  margin-top: 2rem;
+  overflow-x: auto;
+}
+
+/* Título */
+.tabela-container h2 {
+  font-size: 1.5rem;
+  color: #1f2937;
+  margin-bottom: 1.2rem;
+}
+
+/* Estilo da Tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+thead {
+  background-color: #f3f4f6;
+  text-align: left;
+}
+
+thead th {
+  padding: 5px;
+  font-weight: 600;
+  color: #111827;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+tbody tr {
+  padding: 5px;
+  border-bottom: 1px solid #e5e7eb;
+  transition: background-color 0.3s;
+}
+
+tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+tbody td {
+  padding: 0.9rem 1rem;
+}
+
+/* Ações */
+.acao-btn {
+  background-color: #3b82f6;
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: background 0.3s;
+}
+
+.acao-btn:hover {
+  background-color: #2563eb;
+}
+
+.acao-btn.excluir {
+  background-color: #ef4444;
+}
+
+.acao-btn.excluir:hover {
+  background-color: #dc2626;
+}
+
+/* Formulário moderno */
+form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+  margin-top: 2rem;
+}
+
+form label {
+  display: block;
+  margin-top: 1.2rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #f9fafb;
+  transition: border 0.3s;
+}
+
+form input:focus,
+form select:focus {
+  border-color: #60a5fa;
+  outline: none;
+}
+
+/* Botão */
+form input[type="submit"] {
+  background: #3b82f6;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form input[type="submit"]:hover {
+  background: #2563eb;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .dashboard {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem;
+  }
+
+  .sidebar nav a {
+    margin: 0;
+    padding: 0.5rem;
+  }
+
+  .main-content {
+    padding: 1rem;
+  }
+
+  form {
+    padding: 1.5rem;
+  }
+}
