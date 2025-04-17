@@ -9,7 +9,7 @@
 </p>
 
 <p align="center"> Listagem dos Proprietários
-  <img alt="Listagem dos Proprietarios" src="./imagens/lista-proprietarios.png" width="100%">
+  <img alt="Listagem dos Proprietarios" src="./imagens/proprietarios.png" width="100%">
 </p>
 
 <p align="center"> Banco de Dados MySQL
