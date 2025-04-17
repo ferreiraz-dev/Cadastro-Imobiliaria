@@ -1,4 +1,4 @@
-<h1 align="center"> Landing Page </h1>
+<h1 align="center"> Sistema de Cadastro de Proprietários </h1>
 
 <p align="center"> Página Principal
   <img alt="Pagina de Cadastro" src="./imagens/tela-cadastro.png" width="100%">
